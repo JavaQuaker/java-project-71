@@ -3,6 +3,9 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
         description = "Compares two configuration files and shows a difference.")
@@ -21,4 +24,7 @@ public class App  implements Runnable {
     public void run() {
 
     }
+    static File resultFile1 = new File("D:/Test_json/Test_1.txt");
+    static File resultFile2 = new File("D:/Test_json/Test_2.txt");
+    static List<Map<String, Object>> ListMap = new ArrayList<>();
 }
