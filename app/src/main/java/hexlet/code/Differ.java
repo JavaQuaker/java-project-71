@@ -12,26 +12,20 @@ import java.util.TreeSet;
 import static hexlet.code.App.ListMap;
 
 public class Differ {
-    public static void generate(File file1, File file2)throws IOException {
-
+    public static String generate(File file1, File file2)throws IOException {
             ObjectMapper mapper = new ObjectMapper();
-
             Map<String, Object> map1 = mapper.readValue(file1, new TypeReference<Map<String, Object>>() {
             });
             Map<String, Object> map2 = mapper.readValue(file2, new TypeReference<Map<String, Object>>() {
             });
-
-
             TreeSet<String> treeSet = new TreeSet<String>(map1.keySet());
             treeSet.addAll(map2.keySet());
 
             for (String key : treeSet) {
-
                 Map<String, Object> map = new HashMap<>();
                 if (map1.containsKey(key) & map2.containsKey(key)) {
                     Object value1 = map1.get(key);
                     Object value2 = map2.get(key);
-
                     if (value1.equals(value2)) {
                         map.put("    " + key, value1);
                     } else {
@@ -61,9 +55,8 @@ public class Differ {
                 ListMap.add(map4);
                 ListMap.add(map5);
             }
-            toString(ListMap);
+            return toString(ListMap);
         }
-
     public static String toString(List<Map<String, Object>> List) {
         StringBuilder builder = new StringBuilder();
         System.out.println("{");
@@ -73,7 +66,6 @@ public class Differ {
                 builder.append(key).append(": " + " ").append(value).append("\n");
             }
         }
-
         System.out.println(builder.toString().replaceAll("\\s+$", ""));
         System.out.println("}");
         return builder.toString();
