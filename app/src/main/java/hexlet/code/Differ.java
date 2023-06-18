@@ -1,5 +1,5 @@
 package hexlet.code;
-import hexlet.code.App;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
 
-import static hexlet.code.App.ListMap;
+import static hexlet.code.App.listMap;
 
 public class Differ {
     public static String generate(File file1, File file2) throws IOException {
@@ -33,21 +33,21 @@ public class Differ {
                 } else {
                     map.put("  " + "-" + " " + key, value1);
                 }
-                ListMap.add(map);
+                listMap.add(map);
             }
 
             if (map1.containsKey(key) & (!map2.containsKey(key))) {
                 Map<String, Object> map = new HashMap<>();
                 Object value1 = map1.get(key);
                 map.put("  " + "-" + " " + key, value1);
-                ListMap.add(map);
+                listMap.add(map);
             }
 
             if (map2.containsKey(key) & (!map1.containsKey(key))) {
                 Map<String, Object> map = new HashMap<>();
                 Object value2 = map2.get(key);
                 map.put("  " + "+" + " " + key, value2);
-                ListMap.add(map);
+                listMap.add(map);
             }
 
             if (map1.containsKey(key) & (map2.containsKey(key))) {
@@ -56,16 +56,16 @@ public class Differ {
                 Object value2 = map2.get(key);
                 if (!value1.equals(value2)) {
                     map.put("  " + "+" + " " + key, map2.get(key));
-                    ListMap.add(map);
+                    listMap.add(map);
                 }
             }
         }
-        return toString(ListMap);
+        return toString(listMap);
     }
-    public static String toString(List<Map<String, Object>> List) {
+    public static String toString(List<Map<String, Object>> list) {
         StringBuilder builder = new StringBuilder();
         System.out.println("{");
-        for (Map<String, Object> result : ListMap) {
+        for (Map<String, Object> result : listMap) {
             for (String key : result.keySet()) {
                 Object value = result.get(key);
                 builder.append(key).append(": " + " ").append(value).append("\n");
