@@ -24,7 +24,7 @@ public class App  implements Runnable {
     public void run() {
 
     }
-    static File resultFile1 = new File("D:/Test_json/Test_1.txt");
-    static File resultFile2 = new File("D:/Test_json/Test_2.txt");
+    static File resultFile1 = new File("resources/Test_1.txt");
+    static File resultFile2 = new File("resources/Test_2.txt");
     static List<Map<String, Object>> listMap = new ArrayList<>();
 }
