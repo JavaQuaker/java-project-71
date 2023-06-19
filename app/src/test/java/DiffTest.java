@@ -21,20 +21,17 @@ import java.nio.file.Files;
 public class DiffTest {
     File file1;
     File file2;
-
-    
+    String result;
     @BeforeEach
    public void beforeEach() {
-        file1 = new File("resources/Test_1.txt");
-        file2 = new File("resources/Test_2.txt");
-
+        file1 = new File("app/src/test/resources/Test_1.txt");
+        file2 = new File("app/src/test/resources/Test_2.txt");
     }
-        @Test
-        public void Test1() throws IOException {
-
-               String result = Files.readString(Paths.get("src/test/resources/AppTest.txt"));
-                String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
-                assertThat(result).isEqualTo(expected);
-        }
+    @Test
+        public void test() throws IOException {
+        result = Files.readString(Paths.get("app/src/test/resources/DiffTest.txt"));
+        String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
+        assertThat(result).isEqualTo(expected);
     }
+}
 
