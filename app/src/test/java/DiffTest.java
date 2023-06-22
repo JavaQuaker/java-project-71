@@ -29,8 +29,8 @@ public class DiffTest {
     String result;
     @BeforeEach
    public void beforeEach() throws IOException {
-        file1 = new File("src/test/resources/Test_1.txt");
-        file2 = new File("src/test/resources/Test_2.txt");
+        file1 = new File("src/test/resources/jsonFile_1.json");
+        file2 = new File("src/test/resources/jsonFile_2.json");
         file3 = new File("src/test/resources/Test_1yaml.yml");
         file4 = new File("src/test/resources/Test_yaml_2.yml");
         file5 = new File("src/test/resources/testAttachFile_1.txt");

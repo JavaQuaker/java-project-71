@@ -3,9 +3,6 @@ import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Callable;
 
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
@@ -24,10 +21,6 @@ public class App  implements Callable<Integer> {
         int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
-
-    static File resultFile1 = new File("app/src/test/resources/Test_1.txt");
-    static File resultFile2 = new File("app/src/test/resources/Test_2.txt");
-
 
     @Override
     public Integer call() {
