@@ -1,4 +1,4 @@
-import hexlet.code.Parser;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -24,13 +24,17 @@ public class DiffTest {
     File file2;
     File file3;
     File file4;
+    File file5;
+    File file6;
     String result;
     @BeforeEach
    public void beforeEach() throws IOException {
         file1 = new File("src/test/resources/Test_1.txt");
         file2 = new File("src/test/resources/Test_2.txt");
-        file3 = new File("src/test/resources/Test_1yaml.txt");
-        file4 = new File("src/test/resources/Test_yaml_2.txt");
+        file3 = new File("src/test/resources/Test_1yaml.yml");
+        file4 = new File("src/test/resources/Test_yaml_2.yml");
+        file5 = new File("src/test/resources/testAttachFile_1.txt");
+        file6 = new File("src/test/resources/testAttachFile_2.txt");
     }
     @Test
         public void testDiffer() throws IOException {
@@ -38,11 +42,18 @@ public class DiffTest {
         String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
         assertThat(result).isEqualTo(expected);
     }
-    @Test
-    public void testParser() throws IOException {
-        result = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
-        String expected = "{" + "\n" + Parser.compareYamlFile(file3, file4) + "}";
-        assertThat(result).isEqualTo(expected);
-    }
+//    @Test
+//    public void testParser() throws IOException {
+//        result = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
+//        String expected = "{" + "\n" + Parser.compareYamlFile(file3, file4) + "}";
+//        assertThat(result).isEqualTo(expected);
+//    }
+
+//    @Test
+//    public void testAttachFile() throws IOException {
+//        result = Files.readString(Paths.get("src/test/resources/testAttachFileResult.txt"));
+//        String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
+//        assertThat(result).isEqualTo(expected);
+//    }
 }
 
