@@ -1,4 +1,5 @@
 package hexlet.code;
+import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -13,25 +14,15 @@ import java.util.HashMap;
 
 
 public class Differ {
+    static File file;
+    static File file2;
+
+
+    static Map<String, Object> map1;
+    static Map<String, Object> map2;
     static List<Map<String, Object>> listMap = new ArrayList<>();
-    static File jsonFile1 = new File("src/test/resources/jsonFile_1.json");
-    static File jsonFile2 = new File("src/test/resources/jsonFile_2.json");
-    static String formatNameJson = "json";
 
-    static File yamlFile1 = new File("src/test/resources/Test_1yaml.yml");
-    static File yamlFile2 = new File("src/test/resources/Test_yaml_2.yml");
-    static String formatNameYaml = "yml";
-
-    public static String generate(File file1, File file2) throws IOException {
-
-        // парсинг json
-
-        ObjectMapper mapper = new ObjectMapper();
-        Map<String, Object> map1 = mapper.readValue(file1, new TypeReference<Map<String, Object>>() {
-        });
-        Map<String, Object> map2 = mapper.readValue(file2, new TypeReference<Map<String, Object>>() {
-        });
-
+    public static String generate(String filePath1, String filePath2) throws IOException {
 
         Object value1;
         String key1 = null;

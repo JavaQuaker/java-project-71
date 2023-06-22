@@ -5,6 +5,8 @@ import picocli.CommandLine.Command;
 import java.io.File;
 import java.util.concurrent.Callable;
 
+import static hexlet.code.Differ.resultFormat;
+
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
         description = "Compares two configuration files and shows a difference.")
 public class App  implements Callable<Integer> {
@@ -26,7 +28,7 @@ public class App  implements Callable<Integer> {
     public Integer call() {
 
         try {
-            String formattedDiff = Differ.generate(Differ.jsonFile1, Differ.jsonFile2);
+            String formattedDiff = Differ.generate(filepath1, filepath2, resultFormat);
             System.out.println(formattedDiff);
         } catch (Exception e) {
             System.err.println(e.getMessage());

@@ -20,26 +20,25 @@ import java.nio.file.Files;
         "host": "hexlet.io"
 */
 public class DiffTest {
-    File file1;
-    File file2;
-    File file3;
-    File file4;
-    File file5;
-    File file6;
+    String filePath1;
+    String filePath2;
+    String formatName;
     String result;
     @BeforeEach
    public void beforeEach() throws IOException {
-        file1 = new File("src/test/resources/jsonFile_1.json");
-        file2 = new File("src/test/resources/jsonFile_2.json");
-        file3 = new File("src/test/resources/Test_1yaml.yml");
-        file4 = new File("src/test/resources/Test_yaml_2.yml");
-        file5 = new File("src/test/resources/testAttachFile_1.txt");
-        file6 = new File("src/test/resources/testAttachFile_2.txt");
+        filePath1 = "src/test/resources/jsonFile_1.json";
+        filePath2 = "src/test/resources/jsonFile_2.json";
+//        File jsonFile1 = new File("src/test/resources/jsonFile_1.json");
+//        File jsonFile2 = new File("src/test/resources/jsonFile_2.json");
+//
+//        File yamlFile1 = new File("src/test/resources/Test_1yaml.yml");
+//        File yamlFile2 = new File("src/test/resources/Test_yaml_2.yml");
+
     }
     @Test
         public void testDiffer() throws IOException {
         result = Files.readString(Paths.get("src/test/resources/Test.txt"));
-        String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
+        String expected = "{" + "\n" + Differ.generate(filePath1, filePath2) + "}";
         assertThat(result).isEqualTo(expected);
     }
 //    @Test
