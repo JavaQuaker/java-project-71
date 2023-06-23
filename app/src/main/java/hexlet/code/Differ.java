@@ -22,7 +22,7 @@ public class Differ {
     static Map<String, Object> map2;
     static List<Map<String, Object>> listMap = new ArrayList<>();
 
-    public static String generate(String filePath1, String filePath2) throws IOException {
+    public static List<Map<String, Object>> generate(String filePath1, String filePath2) throws IOException {
 
         Object value1;
         String key1 = null;
@@ -42,7 +42,6 @@ public class Differ {
             value2 = result.getValue();
             list.add(value2);
         }
-
         Map<String, Object> newMap1 = (Map<String, Object>) map1.get(key1);
         Map<String, Object> newMap2 = (Map<String, Object>) map2.get(key2);
         System.out.println(newMap1);
@@ -51,7 +50,6 @@ public class Differ {
         TreeSet<String> treeSet = new TreeSet<>(newMap1.keySet());
         treeSet.addAll(newMap2.keySet());
         System.out.println(treeSet);
-
 
         for (String key : treeSet) {
 
@@ -87,7 +85,6 @@ public class Differ {
                 map.put("  " + "+" + " " + key, valueMap2);
                 listMap.add(map);
             }
-
             if (newMap1.containsKey(key) & (newMap2.containsKey(key))) {
                 Object valueMap1 = newMap1.get(key);
                 Object valueMap2 = newMap2.get(key);
@@ -100,20 +97,7 @@ public class Differ {
                 }
             }
         }
-        return toString(listMap);
-    }
-    public static String toString(List<Map<String, Object>> list) {
-        StringBuilder builder = new StringBuilder();
-        System.out.println("{");
-        for (Map<String, Object> result : list) {
-            for (String key : result.keySet()) {
-                Object value = result.get(key);
-                builder.append(key).append(": " + " ").append(value).append("\n");
-            }
-        }
-        System.out.println(builder.toString().replaceAll("\\s+$", ""));
-        System.out.println("}");
-        return builder.toString();
+        return listMap;
     }
 }
 
