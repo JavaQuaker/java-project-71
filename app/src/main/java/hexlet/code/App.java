@@ -1,20 +1,22 @@
 package hexlet.code;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
+
+
 import java.util.concurrent.Callable;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+
+
 
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
         description = "Compares two configuration files and shows a difference.")
 public class App  implements Callable<Integer> {
     @CommandLine.Parameters(index = "0", description = "path to first file")
-    private File filepath1;
+    private String filepath1;
     @CommandLine.Parameters(index = "1", description = "path to second file")
-    private File filepath2;
+    private String filepath2;
+//    @CommandLine.Parameters(index = "2", description = "formatter")
+//    private File formatName;
     @CommandLine.Option(names = {"-f", "--format"}, description = "output format [default: stylish]")
     private String algorithm;
     private static final int SUCCESS_EXIT_CODE = 0;
@@ -24,7 +26,6 @@ public class App  implements Callable<Integer> {
         int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
-
     @Override
     public Integer call() {
 
@@ -35,7 +36,6 @@ public class App  implements Callable<Integer> {
             System.err.println(e.getMessage());
             return ERROR_EXIT_CODE;
         }
-
         return SUCCESS_EXIT_CODE;
     }
 }
