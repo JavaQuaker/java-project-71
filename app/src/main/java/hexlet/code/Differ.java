@@ -1,6 +1,4 @@
 package hexlet.code;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 import java.util.List;
@@ -27,10 +25,6 @@ public class Differ {
 //    }
 
     public static String generate(String filePath1, String filePath2) throws IOException {
-
-
-        File file1 = new File(filePath1);
-        File file2 = new File(filePath2);
 
         map1 = Parser.parse(filePath1);
         map2 = Parser.parse(filePath2);
