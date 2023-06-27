@@ -13,8 +13,11 @@ public class DiffTest {
     String file2;
     String file3;
     String file4;
+    String file5;
+    String file6;
     String resultJsonTest;
     String resultYamlTest;
+    String resultYamlNested;
 
 
     @Test
@@ -33,6 +36,14 @@ public class DiffTest {
         resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
         String expected2 = "{" + "\n" + Differ.generate(file3, file4) + "}";
         assertThat(resultYamlTest).isEqualTo(expected2);
+    }
+    @Test
+     public void testDifferYamlNested() throws IOException {
+        file5 = "src/test/resources/testAttachFile_1.yml";
+        file6 = "src/test/resources/testAttachFile_2.yml";
+        resultYamlNested = Files.readString(Paths.get("src/test/resources/testAttachFileResult.txt"));
+        String expected3 = "{" + "\n" + Differ.generate(file5, file6) + "}";
+        assertThat(resultYamlNested).isEqualTo(expected3);
     }
 }
 

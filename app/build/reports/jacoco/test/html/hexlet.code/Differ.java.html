@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Differ.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">app</a> &gt; <a href="index.source.html" class="el_package">hexlet.code</a> &gt; <span class="el_source">Differ.java</span></div><h1>Differ.java</h1><pre class="source lang-java linenums">package hexlet.code;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+
+<span class="nc" id="L10">public class Differ {</span>
+
+//    static String filePath1 = &quot;app/src/test/resources/jsonFile_1.json&quot;;
+//    static String getFilePath2 = &quot;app/src/test/resources/jsonFile_2.json&quot;;
+
+//    static String filePath1 = &quot;app/src/test/resources/testAttachFile_1.yml&quot;;
+//    static String getFilePath2 = &quot;app/src/test/resources/testAttachFile_2.yml&quot;;
+
+//    static String filePath1 = &quot;app/src/test/resources/Test_1yaml.yml&quot;;
+//    static String getFilePath2 = &quot;app/src/test/resources/Test_yaml_2.yml&quot;;
+<span class="fc" id="L20">    static List&lt;Map&lt;String, Object&gt;&gt; listMap1 = new ArrayList&lt;&gt;();</span>
+    static Map&lt;String, Object&gt; map1;
+    static Map&lt;String, Object&gt; map2;
+
+//    public static void main(String[] args) throws IOException {
+//        generate(filePath1, getFilePath2);
+//    }
+
+    public static String generate(String filePath1, String filePath2) throws IOException {
+
+<span class="fc" id="L30">        map1 = Parser.parse(filePath1);</span>
+<span class="fc" id="L31">        map2 = Parser.parse(filePath2);</span>
+
+<span class="fc" id="L33">        TreeSet&lt;String&gt; treeSet = new TreeSet&lt;&gt;(map1.keySet());</span>
+<span class="fc" id="L34">        treeSet.addAll(map2.keySet());</span>
+<span class="fc" id="L35">        listMap1.clear();</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (String key : treeSet) {</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">            if (map1.containsKey(key) &amp; map2.containsKey(key)) {</span>
+<span class="fc" id="L38">                Object value1 = map1.get(key);</span>
+<span class="fc" id="L39">                Object value2 = map2.get(key);</span>
+<span class="fc" id="L40">                Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">                if (value1 != null) {</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">                    if (value1.equals(value2)) {</span>
+<span class="fc" id="L43">                        map.put(&quot;    &quot; + key, value1);</span>
+                    } else {
+<span class="fc" id="L45">                        map.put(&quot;  &quot; + &quot;-&quot; + &quot; &quot; + key, value1);</span>
+                    }
+                } else {
+<span class="fc" id="L48">                    map.put(&quot;  &quot; + &quot;-&quot; + &quot; &quot; + key, map1.get(key));</span>
+<span class="fc" id="L49">                    map.put(&quot;  &quot; + &quot;+&quot; + &quot; &quot; + key, map2.get(key));</span>
+                }
+<span class="fc" id="L51">                listMap1.add(map);</span>
+            }
+<span class="fc bfc" id="L53" title="All 4 branches covered.">            if (map1.containsKey(key) &amp; (!map2.containsKey(key))) {</span>
+<span class="fc" id="L54">                Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L55">                Object value1 = map1.get(key);</span>
+<span class="fc" id="L56">                map.put(&quot;  &quot; + &quot;-&quot; + &quot; &quot; + key, value1);</span>
+<span class="fc" id="L57">                listMap1.add(map);</span>
+            }
+<span class="fc bfc" id="L59" title="All 4 branches covered.">            if (map2.containsKey(key) &amp; (!map1.containsKey(key))) {</span>
+<span class="fc" id="L60">                Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L61">                Object value2 = map2.get(key);</span>
+<span class="fc" id="L62">                map.put(&quot;  &quot; + &quot;+&quot; + &quot; &quot; + key, value2);</span>
+<span class="fc" id="L63">                listMap1.add(map);</span>
+            }
+<span class="fc bfc" id="L65" title="All 2 branches covered.">            if (map1.containsKey(key) &amp; (map2.containsKey(key))) {</span>
+<span class="fc" id="L66">                Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L67">                Object value1 = map1.get(key);</span>
+<span class="fc" id="L68">                Object value2 = map2.get(key);</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">                if (value1 != null) {</span>
+<span class="fc bfc" id="L70" title="All 2 branches covered.">                    if (!value1.equals(value2)) {</span>
+<span class="fc" id="L71">                        map.put(&quot;  &quot; + &quot;+&quot; + &quot; &quot; + key, map2.get(key));</span>
+<span class="fc" id="L72">                        listMap1.add(map);</span>
+                    }
+                }
+            }
+<span class="fc" id="L76">        }</span>
+
+<span class="fc" id="L78">        return toString(listMap1);</span>
+    }
+
+
+    public static String toString(List&lt;Map&lt;String, Object&gt;&gt; list) {
+<span class="fc" id="L83">        StringBuilder builder = new StringBuilder();</span>
+<span class="fc" id="L84">        System.out.println(&quot;{&quot;);</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">        for (Map&lt;String, Object&gt; result : list) {</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">            for (String key : result.keySet()) {</span>
+<span class="fc" id="L87">                Object value = result.get(key);</span>
+<span class="fc" id="L88">                builder.append(key).append(&quot;: &quot; + &quot;&quot;).append(value).append(&quot;\n&quot;);</span>
+<span class="fc" id="L89">            }</span>
+<span class="fc" id="L90">        }</span>
+<span class="fc" id="L91">        System.out.println(builder.toString().replaceAll(&quot;\\s+$&quot;, &quot;&quot;));</span>
+<span class="fc" id="L92">        System.out.println(&quot;}&quot;);</span>
+<span class="fc" id="L93">        return builder.toString();</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

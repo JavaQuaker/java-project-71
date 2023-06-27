@@ -1,0 +1,18 @@
+Index: app/src/main/java/hexlet/code/App.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hexlet.code;\r\nimport picocli.CommandLine;\r\nimport picocli.CommandLine.Command;\r\n\r\nimport java.io.File;\r\nimport java.util.concurrent.Callable;\r\n\r\n\r\n\r\n@Command(name = \"gendiff\", mixinStandardHelpOptions = true, version = \"gendiff 1.0\",\r\n        description = \"Compares two configuration files and shows a difference.\")\r\npublic class App  implements Callable<Integer> {\r\n    @CommandLine.Parameters(index = \"0\", description = \"path to first file\")\r\n    private File filepath1;\r\n    @CommandLine.Parameters(index = \"1\", description = \"path to second file\")\r\n    private File filepath2;\r\n    @CommandLine.Option(names = {\"-f\", \"--format\"}, description = \"output format [default: stylish]\")\r\n    private String algorithm;\r\n    private static final int SUCCESS_EXIT_CODE = 0;\r\n    private static final int ERROR_EXIT_CODE = 1;\r\n\r\n    public static void main(String[] args) {\r\n        int exitCode = new CommandLine(new App()).execute(args);\r\n        System.exit(exitCode);\r\n    }\r\n\r\n    @Override\r\n    public Integer call() {\r\n\r\n        try {\r\n            String formattedDiff = Differ.generate(filepath1, filepath2);\r\n            System.out.println(formattedDiff);\r\n        } catch (Exception e) {\r\n            System.err.println(e.getMessage());\r\n            return ERROR_EXIT_CODE;\r\n        }\r\n\r\n        return SUCCESS_EXIT_CODE;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/hexlet/code/App.java b/app/src/main/java/hexlet/code/App.java
+--- a/app/src/main/java/hexlet/code/App.java	(revision 672db4f947dea555a4be736dc7f22c744155dffe)
++++ b/app/src/main/java/hexlet/code/App.java	(date 1687762265508)
+@@ -6,7 +6,6 @@
+ import java.util.concurrent.Callable;
+ 
+ 
+-
+ @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",
+         description = "Compares two configuration files and shows a difference.")
+ public class App  implements Callable<Integer> {
