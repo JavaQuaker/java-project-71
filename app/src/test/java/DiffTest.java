@@ -22,17 +22,17 @@ public class DiffTest {
         file1 = "src/test/resources/jsonFile_1.json";
         file2 = "src/test/resources/jsonFile_2.json";
         resultJsonTest = Files.readString(Paths.get("src/test/resources/Test.txt"));
-        String expected = "{" + "\n" + Differ.generate(file1, file2) + "}";
-        assertThat(resultJsonTest).isEqualTo(expected);
+        String expected1 = "{" + "\n" + Differ.generate(file1, file2) + "}";
+        assertThat(resultJsonTest).isEqualTo(expected1);
     }
 
     @Test
     public void testDifferYaml() throws IOException {
-        file3 = "src/test/resources/Test_1yaml.yaml";
-        file4 = "src/test/resources/Test_yaml_2.yaml";
+        file3 = "src/test/resources/Test_1yaml.yml";
+        file4 = "src/test/resources/Test_yaml_2.yml";
         resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
-        String expected = "{" + "\n" + Differ.generate(file3, file4) + "}";
-        assertThat(resultYamlTest).isEqualTo(expected);
+        String expected2 = "{" + "\n" + Differ.generate(file3, file4) + "}";
+        assertThat(resultYamlTest).isEqualTo(expected2);
     }
 }
 
