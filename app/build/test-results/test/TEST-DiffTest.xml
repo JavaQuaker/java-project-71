@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DiffTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-06-27T19:21:24" hostname="LAPTOP-I4ECEIM6" time="2.511">
+<testsuite name="DiffTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-30T07:49:19" hostname="LAPTOP-I4ECEIM6" time="1.756">
   <properties/>
-  <testcase name="testDifferJson()" classname="DiffTest" time="2.323"/>
-  <testcase name="testDifferYaml()" classname="DiffTest" time="0.126"/>
-  <testcase name="testDifferYamlNested()" classname="DiffTest" time="0.048"/>
+  <testcase name="testDifferYamlNested()" classname="DiffTest" time="1.756"/>
   <system-out><![CDATA[{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}
-{
-  - follow: false
-    host: hexlet.io
-  - proxy: 123.234.53.22
-  - timeout: 50
-  + timeout: 20
-  + verbose: true
-}
-{
     chars1: [a, b, c]
   - chars2: [d, e, f]
   + chars2: false

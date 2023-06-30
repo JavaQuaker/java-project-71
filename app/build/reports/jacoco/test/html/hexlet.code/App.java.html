@@ -15,27 +15,29 @@ import java.util.concurrent.Callable;
     private String filepath1;
     @CommandLine.Parameters(index = &quot;1&quot;, description = &quot;path to second file&quot;)
     private String filepath2;
-//    @CommandLine.Parameters(index = &quot;2&quot;, description = &quot;formatter&quot;)
-//    private File formatName;
-    @CommandLine.Option(names = {&quot;-f&quot;, &quot;--format&quot;}, description = &quot;output format [default: stylish]&quot;)
-    private String algorithm;
+//    @CommandLine.Parameters(index = &quot;0&quot;, description = &quot;formatter&quot;)
+//    private String formatName;
+    @CommandLine.Option(names = {&quot;-f&quot;, &quot;--format&quot;}, defaultValue = &quot;stylish&quot;,
+            description = &quot;output format [default: stylish]&quot;)
+    private String formatName;
     private static final int SUCCESS_EXIT_CODE = 0;
     private static final int ERROR_EXIT_CODE = 1;
 
     public static void main(String[] args) {
-<span class="nc" id="L26">        int exitCode = new CommandLine(new App()).execute(args);</span>
-<span class="nc" id="L27">        System.exit(exitCode);</span>
-<span class="nc" id="L28">    }</span>
+<span class="nc" id="L27">        int exitCode = new CommandLine(new App()).execute(args);</span>
+<span class="nc" id="L28">        System.exit(exitCode);</span>
+<span class="nc" id="L29">    }</span>
     @Override
     public Integer call() {
 
         try {
-<span class="nc" id="L33">            String formattedDiff = Differ.generate(filepath1, filepath2);</span>
-<span class="nc" id="L34">        } catch (Exception e) {</span>
-<span class="nc" id="L35">            System.err.println(e.getMessage());</span>
-<span class="nc" id="L36">            return ERROR_EXIT_CODE;</span>
-<span class="nc" id="L37">        }</span>
-<span class="nc" id="L38">        return SUCCESS_EXIT_CODE;</span>
+<span class="nc" id="L34">            String formattedDiff = Differ.generate(filepath1, filepath2, formatName);</span>
+
+<span class="nc" id="L36">        } catch (Exception e) {</span>
+<span class="nc" id="L37">            System.err.println(e.getMessage());</span>
+<span class="nc" id="L38">            return ERROR_EXIT_CODE;</span>
+<span class="nc" id="L39">        }</span>
+<span class="nc" id="L40">        return SUCCESS_EXIT_CODE;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

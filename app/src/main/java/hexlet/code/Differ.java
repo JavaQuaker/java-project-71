@@ -22,10 +22,10 @@ public class Differ {
     static Map<String, Object> map2;
 
 //    public static void main(String[] args) throws IOException {
-//        generate(filePath1, getFilePath2);
+//        System.out.println(generate(filePath1, getFilePath2, "yml"));
 //    }
 
-    public static String generate(String filePath1, String filePath2) throws IOException {
+    public static List<Map<String, Object>> generate(String filePath1, String filePath2) throws IOException {
 
         map1 = Parser.parse(filePath1);
         map2 = Parser.parse(filePath2);
@@ -75,7 +75,12 @@ public class Differ {
             }
         }
 
-        return toString(listMap1);
+        return listMap1;
+
+    }
+    public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
+
+        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);
     }
 
 

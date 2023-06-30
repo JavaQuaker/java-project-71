@@ -15,10 +15,11 @@ public class App  implements Callable<Integer> {
     private String filepath1;
     @CommandLine.Parameters(index = "1", description = "path to second file")
     private String filepath2;
-//    @CommandLine.Parameters(index = "2", description = "formatter")
-//    private File formatName;
-    @CommandLine.Option(names = {"-f", "--format"}, description = "output format [default: stylish]")
-    private String algorithm;
+//    @CommandLine.Parameters(index = "0", description = "formatter")
+//    private String formatName;
+    @CommandLine.Option(names = {"-f", "--format"}, defaultValue = "stylish",
+            description = "output format [default: stylish]")
+    private String formatName;
     private static final int SUCCESS_EXIT_CODE = 0;
     private static final int ERROR_EXIT_CODE = 1;
 
@@ -30,7 +31,8 @@ public class App  implements Callable<Integer> {
     public Integer call() {
 
         try {
-            String formattedDiff = Differ.generate(filepath1, filepath2);
+            String formattedDiff = Differ.generate(filepath1, filepath2, formatName);
+
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return ERROR_EXIT_CODE;

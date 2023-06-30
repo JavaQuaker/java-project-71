@@ -9,9 +9,6 @@ import java.io.IOException;
 import java.util.Map;
 
 public class Parser {
-
-
-
     public static Map<String, Object> parse(String filePath) throws IOException {
         Map<String, Object> map = null;
         if (searchExtension(filePath).equals("json")) {
