@@ -25,6 +25,7 @@ public class Parser {
             });
             return map;
         }
+
         return map;
     }
     public static String searchExtension(String filePath) {

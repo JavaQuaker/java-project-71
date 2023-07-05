@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45.1">
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/FormatStylish.java">
+</file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatter.java">
 </file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/App.java">
@@ -7,5 +9,9 @@
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Parser.java">
 </file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Differ.java">
+</file>
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/FormatJson.java">
+</file>
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/FormatPlain.java">
 </file>
 </checkstyle>

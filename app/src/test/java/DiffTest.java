@@ -3,6 +3,8 @@
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import hexlet.code.Differ;
+
+
 import java.nio.file.Paths;
 
 import java.io.IOException;
@@ -15,40 +17,77 @@ public class DiffTest {
     String file4;
     String file5;
     String file6;
+    String file7;
+    String file8;
     String resultJsonTest;
     String resultYamlTest;
-    String resultYamlNested;
+
     String formatName;
 
+    @Test
+    public void testDifferJsonStylish() throws IOException {
+        file1 = "src/test/resources/jsonFile_1.json";
+        file2 = "src/test/resources/jsonFile_2.json";
+        formatName = "stylish";
+        resultJsonTest = Files.readString(Paths.get("src/test/resources/Test.txt"));
+        String expected1 = /*"{" + "\n" + */Differ.generate(file1, file2, formatName) /*+ "}"*/;
+        assertThat(resultJsonTest).isEqualTo(expected1);
+    }
+    @Test
+    public void testDifferJsonPlain() throws IOException {
+        file1 = "src/test/resources/jsonFile_1.json";
+        file2 = "src/test/resources/jsonFile_2.json";
+        formatName = "plain";
+        resultJsonTest = Files.readString(Paths.get("src/test/resources/TestJsonPlain.txt"));
+        String expected1 = /*"{" + "\n" + */Differ.generate(file1, file2, formatName) /*+ "}"*/;
+        assertThat(resultJsonTest).isEqualTo(expected1);
+    }
+    @Test
+    public void testDifferJsonJson() throws IOException {
+        file1 = "src/test/resources/jsonFile_1.json";
+        file2 = "src/test/resources/jsonFile_2.json";
+        formatName = "json";
+        resultJsonTest = Files.readString(Paths.get("src/test/resources/TestJsonJson.txt"));
+        String expected1 = /*"{" + "\n" + */Differ.generate(file1, file2, formatName) /*+ "}"*/;
+        assertThat(resultJsonTest).isEqualTo(expected1);
+    }
 
 //    @Test
-//    public void testDifferJson() throws IOException {
+//    public void testDifferJsonDefault() throws IOException {
 //        file1 = "src/test/resources/jsonFile_1.json";
 //        file2 = "src/test/resources/jsonFile_2.json";
-//        formatName = "yml";
-//        resultJsonTest = Files.readString(Paths.get("src/test/resources/Test.txt"));
-//        String expected1 = "{" + "\n" + Differ.generate(file1, file2, formatName) + "}";
+//
+//        resultJsonTest = Files.readString(Paths.get("src/test/resources/TestJsonJson.txt"));
+//        String expected1 = /*"{" + "\n" + */Differ.generate(file1, file2) /*+ "}"*/;
 //        assertThat(resultJsonTest).isEqualTo(expected1);
 //    }
 
-
-    //    @Test
-//    public void testDifferYaml() throws IOException {
-//        file3 = "src/test/resources/Test_1yaml.yml";
-//        file4 = "src/test/resources/Test_yaml_2.yml";
-//        formatName = "yml";
-//        resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
-//        String expected2 = "{" + "\n" + Differ.generate(file3, file4, formatName) + "}";
-//        assertThat(resultYamlTest).isEqualTo(expected2);
-//    }
     @Test
-    public void testDifferYamlNested() throws IOException {
-        file5 = "src/test/resources/testAttachFile_1.yml";
-        file6 = "src/test/resources/testAttachFile_2.yml";
+    public void testDifferYamlStylish() throws IOException {
+        file3 = "src/test/resources/Test_1yaml.yml";
+        file4 = "src/test/resources/Test_yaml_2.yml";
         formatName = "stylish";
-        resultYamlNested = Files.readString(Paths.get("src/test/resources/testAttachFileResult.txt"));
-        String expected3 = "{" + "\n" + Differ.generate(file5, file6, formatName) + "}";
-        assertThat(resultYamlNested).isEqualTo(expected3);
+        resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
+        String expected2 = /*"{" + "\n" + */Differ.generate(file3, file4, formatName)/* + "}"*/;
+        assertThat(resultYamlTest).isEqualTo(expected2);
+    }
+    @Test
+    public void testDifferYamlPlain() throws IOException {
+        file3 = "src/test/resources/Test_1yaml.yml";
+        file4 = "src/test/resources/Test_yaml_2.yml";
+        formatName = "plain";
+        resultYamlTest = Files.readString(Paths.get("src/test/resources/TestYamlPlain.txt"));
+        String expected2 = /*"{" + "\n" + */Differ.generate(file3, file4, formatName)/* + "}"*/;
+        assertThat(resultYamlTest).isEqualTo(expected2);
+    }
+    @Test
+    public void testDifferYamlJson() throws IOException {
+        file3 = "src/test/resources/Test_1yaml.yml";
+        file4 = "src/test/resources/Test_yaml_2.yml";
+        formatName = "json";
+        resultYamlTest = Files.readString(Paths.get("src/test/resources/TestYamlJson.txt"));
+        String expected2 = /*"{" + "\n" + */Differ.generate(file3, file4, formatName)/* + "}"*/;
+        assertThat(resultYamlTest).isEqualTo(expected2);
     }
 }
 

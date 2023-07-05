@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DiffTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-30T07:49:19" hostname="LAPTOP-I4ECEIM6" time="1.756">
+<testsuite name="DiffTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-07-05T20:04:01" hostname="LAPTOP-I4ECEIM6" time="6.511">
   <properties/>
-  <testcase name="testDifferYamlNested()" classname="DiffTest" time="1.756"/>
-  <system-out><![CDATA[{
-    chars1: [a, b, c]
-  - chars2: [d, e, f]
-  + chars2: false
-  - checked: false
-  + checked: true
-  - default: null
-  + default: [value1, value2]
-  - id: 45
-  + id: null
-  - key1: value1
-  + key2: value2
-    numbers1: [1, 2, 3, 4]
-  - numbers2: [2, 3, 4, 5]
-  + numbers2: [22, 33, 44, 55]
-  - numbers3: [3, 4, 5]
-  + numbers4: [4, 5, 6]
-  + obj1: {nestedKey=value, isNested=true}
-  - setting1: Some value
-  + setting1: Another value
-  - setting2: 200
-  + setting2: 300
-  - setting3: true
-  + setting3: none
-}
-]]></system-out>
+  <testcase name="testDifferJsonPlain()" classname="DiffTest" time="4.85"/>
+  <testcase name="testDifferYamlStylish()" classname="DiffTest" time="1.36"/>
+  <testcase name="testDifferJsonJson()" classname="DiffTest" time="0.164"/>
+  <testcase name="testDifferYamlJson()" classname="DiffTest" time="0.021"/>
+  <testcase name="testDifferJsonStylish()" classname="DiffTest" time="0.022"/>
+  <testcase name="testDifferYamlPlain()" classname="DiffTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
