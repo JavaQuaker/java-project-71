@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4edefb8b-048a-4ab4-a2de-f6fc90d94c79" name="Changes" comment="formatter stylish">
+    <list default="true" id="4edefb8b-048a-4ab4-a2de-f6fc90d94c79" name="Changes" comment="add FormatJson, FormatStylish">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/FormatJson.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/FormatStylish.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_06_2023_9_51_[Changes]/shelved.patch" beforeDir="false" />
@@ -36,71 +36,31 @@
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/DiffTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/DiffTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/bin/app" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/bin/app.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/app-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-annotations-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-core-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-databind-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-dataformat-yaml-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/picocli-4.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/snakeyaml-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/jacoco/test.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/install/app/lib/app-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/checkstyle/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/checkstyle/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/checkstyle/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/checkstyle/main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.source.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/branchfc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/branchnc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/branchpc.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/bundle.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/class.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/greenbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/group.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/method.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/package.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/prettify.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/prettify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/redbar.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/report.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/report.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/session.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/sort.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/source.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-resources/up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/resources/test/jsonFile_1.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/resources/test/jsonFile_1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/jacocoagent.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/org.jacoco.agent-0.8.8.jar_a33b649e552c51298e5a242c2f0d0e3c/org/jacoco/agent/AgentJar.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" afterDir="false" />
@@ -212,7 +172,7 @@
       <recent name="\\wsl$\Ubuntu\home\alexey\java-project-71\app\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.app [build]">
+  <component name="RunManager" selected="Gradle.app [installDist]">
     <configuration name="DiffTest.testDifferYaml" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -322,9 +282,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [build]" />
         <item itemvalue="Gradle.app [clean]" />
-        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [checkstyleTest]" />
         <item itemvalue="Gradle.DiffTest.testDifferYaml" />
       </list>
@@ -465,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688111771814</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add FormatJson, FormatStylish">
+      <created>1688588030824</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688588030824</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,6 +488,7 @@
     <MESSAGE value="add jsonFile_1.json, jsonFile_2.json, Test_1yaml.yml, Test_yaml_2.yml" />
     <MESSAGE value="working version (without formatter)" />
     <MESSAGE value="formatter stylish" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatter stylish" />
+    <MESSAGE value="add FormatJson, FormatStylish" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FormatJson, FormatStylish" />
   </component>
 </project>
