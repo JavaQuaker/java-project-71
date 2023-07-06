@@ -13,11 +13,11 @@ import java.util.TreeSet;
     static String getFilePath2 = &quot;app/src/test/resources/jsonFile_2.json&quot;;
 
 
-    static String filePath1 = &quot;app/src/test/resources/testAttachFile_1.yml&quot;;
-    static String getFilePath2 = &quot;app/src/test/resources/testAttachFile_2.yml&quot;;
+//    static String filePath1 = &quot;app/src/test/resources/testAttachFile_1.yml&quot;;
+//    static String getFilePath2 = &quot;app/src/test/resources/testAttachFile_2.yml&quot;;
 
-    static String filePath1 = &quot;app/src/test/resources/Test_1yaml.yml&quot;;
-    static String getFilePath2 = &quot;app/src/test/resources/Test_yaml_2.yml&quot;;
+//    static String filePath1 = &quot;app/src/test/resources/Test_1yaml.yml&quot;;
+//    static String getFilePath2 = &quot;app/src/test/resources/Test_yaml_2.yml&quot;;
 
  */
 <span class="fc" id="L23">    static List&lt;Map&lt;String, Object&gt;&gt; listMap1 = new ArrayList&lt;&gt;();</span>
@@ -77,21 +77,6 @@ import java.util.TreeSet;
 
 <span class="fc" id="L78">        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);</span>
     }
-
-
-//    public static String toString(List&lt;Map&lt;String, Object&gt;&gt; list) {
-//        StringBuilder builder = new StringBuilder();
-//        System.out.println(&quot;{&quot;);
-//        for (Map&lt;String, Object&gt; result : list) {
-//            for (String key : result.keySet()) {
-//                Object value = result.get(key);
-//                builder.append(key).append(&quot; &quot; + &quot;&quot;).append(value).append(&quot;\n&quot;);
-//            }
-//        }
-//        System.out.println(builder.toString().replaceAll(&quot;\\s+$&quot;, &quot;&quot;));
-//        System.out.println(&quot;}&quot;);
-//        return builder.toString();
-//    }
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -13,11 +13,11 @@ public class Differ {
     static String getFilePath2 = "app/src/test/resources/jsonFile_2.json";
 
 
-    static String filePath1 = "app/src/test/resources/testAttachFile_1.yml";
-    static String getFilePath2 = "app/src/test/resources/testAttachFile_2.yml";
+//    static String filePath1 = "app/src/test/resources/testAttachFile_1.yml";
+//    static String getFilePath2 = "app/src/test/resources/testAttachFile_2.yml";
 
-    static String filePath1 = "app/src/test/resources/Test_1yaml.yml";
-    static String getFilePath2 = "app/src/test/resources/Test_yaml_2.yml";
+//    static String filePath1 = "app/src/test/resources/Test_1yaml.yml";
+//    static String getFilePath2 = "app/src/test/resources/Test_yaml_2.yml";
 
  */
     static List<Map<String, Object>> listMap1 = new ArrayList<>();
@@ -77,20 +77,5 @@ public class Differ {
 
         return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);
     }
-
-
-//    public static String toString(List<Map<String, Object>> list) {
-//        StringBuilder builder = new StringBuilder();
-//        System.out.println("{");
-//        for (Map<String, Object> result : list) {
-//            for (String key : result.keySet()) {
-//                Object value = result.get(key);
-//                builder.append(key).append(" " + "").append(value).append("\n");
-//            }
-//        }
-//        System.out.println(builder.toString().replaceAll("\\s+$", ""));
-//        System.out.println("}");
-//        return builder.toString();
-//    }
 }
 

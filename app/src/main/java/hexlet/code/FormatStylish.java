@@ -2,7 +2,7 @@ package hexlet.code;
 import java.util.List;
 import java.util.Map;
 public class FormatStylish {
-    public static String formatting(List<Map<String, Object>> list, String formatName) {
+    public static String formattingStylish(List<Map<String, Object>> list, String formatName) {
         StringBuilder builder = new StringBuilder("{\n");
         if ((formatName.equals("stylish"))) {
             for (Map<String, Object> result : list) {

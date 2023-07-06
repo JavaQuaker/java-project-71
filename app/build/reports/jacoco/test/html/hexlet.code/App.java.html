@@ -31,7 +31,7 @@ import java.util.concurrent.Callable;
     public Integer call() {
 
         try {
-<span class="nc" id="L34">            String formattedDiff = Differ.generate(filepath1, filepath2, formatName);</span>
+<span class="nc" id="L34">            System.out.println(Differ.generate(filepath1, filepath2, formatName));</span>
 
 <span class="nc" id="L36">        } catch (Exception e) {</span>
 <span class="nc" id="L37">            System.err.println(e.getMessage());</span>
