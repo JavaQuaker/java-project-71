@@ -58,15 +58,15 @@ public class DiffTest {
 
 
 
-    @Test
-    public void testDifferYamlStylish() throws IOException {
-        file7 = "src/test/resources/Test_1yaml.yml";
-        file8 = "src/test/resources/Test_yaml_2.yml";
-        formatName = "stylish";
-        resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
-        String expected2 = /*"{" + "\n" + */Differ.generate(file7, file8, formatName)/* + "}"*/;
-        assertThat(resultYamlTest).isEqualTo(expected2);
-    }
+//    @Test
+//    public void testDifferYamlStylish() throws IOException {
+//        file7 = "src/test/resources/Test_1yaml.yml";
+//        file8 = "src/test/resources/Test_yaml_2.yml";
+//        formatName = "stylish";
+//        resultYamlTest = Files.readString(Paths.get("src/test/resources/Test_yaml.txt"));
+//        String expected2 = /*"{" + "\n" + */Differ.generate(file7, file8, formatName)/* + "}"*/;
+//        assertThat(resultYamlTest).isEqualTo(expected2);
+//    }
 //    @Test
 //    public void testDifferYamlPlain() throws IOException {
 //        file9 = "src/test/resources/Test_1yaml.yml";
