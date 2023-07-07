@@ -8,74 +8,58 @@ import java.util.TreeSet;
 
 
 <span class="nc" id="L10">public class Differ {</span>
-/*
-    static String filePath1 = &quot;app/src/test/resources/jsonFile_1.json&quot;;
-    static String getFilePath2 = &quot;app/src/test/resources/jsonFile_2.json&quot;;
 
-
-//    static String filePath1 = &quot;app/src/test/resources/testAttachFile_1.yml&quot;;
-//    static String getFilePath2 = &quot;app/src/test/resources/testAttachFile_2.yml&quot;;
-
-//    static String filePath1 = &quot;app/src/test/resources/Test_1yaml.yml&quot;;
-//    static String getFilePath2 = &quot;app/src/test/resources/Test_yaml_2.yml&quot;;
-
- */
-<span class="fc" id="L23">    static List&lt;Map&lt;String, Object&gt;&gt; listMap1 = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L12">    static List&lt;Map&lt;String, Object&gt;&gt; listMap1 = new ArrayList&lt;&gt;();</span>
     static Map&lt;String, Object&gt; map1;
     static Map&lt;String, Object&gt; map2;
 
-    /* public static void main(String[] args) throws IOException {
-       generate(filePath1, getFilePath2);
-       System.out.println(FormatStylish.formatting(generate(filePath1, getFilePath2), &quot;stylish&quot;));
-       System.out.println(FormatPlain.formatPlain(generate(filePath1, getFilePath2), &quot;plain&quot;));
-         System.out.println(FormatJson.formatJson(generate(filePath1, getFilePath2),&quot;json&quot; ));
-     }*/
+
     public static List&lt;Map&lt;String, Object&gt;&gt; generate(String filePath1, String filePath2) throws IOException {
-<span class="fc" id="L34">        map1 = Parser.parse(filePath1);</span>
-<span class="fc" id="L35">        map2 = Parser.parse(filePath2);</span>
-<span class="fc" id="L36">        TreeSet&lt;String&gt; treeSet = new TreeSet&lt;&gt;(map1.keySet());</span>
-<span class="fc" id="L37">        treeSet.addAll(map2.keySet());</span>
-<span class="fc" id="L38">        listMap1.clear();</span>
+<span class="fc" id="L18">        map1 = Parser.parse(filePath1);</span>
+<span class="fc" id="L19">        map2 = Parser.parse(filePath2);</span>
+<span class="fc" id="L20">        TreeSet&lt;String&gt; treeSet = new TreeSet&lt;&gt;(map1.keySet());</span>
+<span class="fc" id="L21">        treeSet.addAll(map2.keySet());</span>
+<span class="fc" id="L22">        listMap1.clear();</span>
 
-<span class="fc bfc" id="L40" title="All 2 branches covered.">        for (String key : treeSet) {</span>
-<span class="fc" id="L41">            Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
-<span class="fc" id="L42">            Object value1 = map1.get(key);</span>
-<span class="fc" id="L43">            Object value2 = map2.get(key);</span>
-<span class="fc" id="L44">            map.put(&quot;key&quot;, key);</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (String key : treeSet) {</span>
+<span class="fc" id="L25">            Map&lt;String, Object&gt; map = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L26">            Object value1 = map1.get(key);</span>
+<span class="fc" id="L27">            Object value2 = map2.get(key);</span>
+<span class="fc" id="L28">            map.put(&quot;key&quot;, key);</span>
 
-<span class="fc bfc" id="L46" title="All 2 branches covered.">            if (!map2.containsKey(key)) {</span>
-<span class="fc" id="L47">                map.put(&quot;type&quot;, &quot;deleted&quot;);</span>
-<span class="fc" id="L48">                map.put(&quot;value&quot;, value1);</span>
-<span class="fc bfc" id="L49" title="All 2 branches covered.">            } else if (!map1.containsKey(key)) {</span>
-<span class="fc" id="L50">                map.put(&quot;type&quot;, &quot;added&quot;);</span>
-<span class="fc" id="L51">                map.put(&quot;value&quot;, value2);</span>
-<span class="fc bfc" id="L52" title="All 2 branches covered.">            } else if (compare(value1, value2)) {</span>
-<span class="fc" id="L53">                map.put(&quot;type&quot;, &quot;unchanged&quot;);</span>
-<span class="fc" id="L54">                map.put(&quot;value&quot;, value1);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">            if (!map2.containsKey(key)) {</span>
+<span class="fc" id="L31">                map.put(&quot;type&quot;, &quot;deleted&quot;);</span>
+<span class="fc" id="L32">                map.put(&quot;value&quot;, value1);</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">            } else if (!map1.containsKey(key)) {</span>
+<span class="fc" id="L34">                map.put(&quot;type&quot;, &quot;added&quot;);</span>
+<span class="fc" id="L35">                map.put(&quot;value&quot;, value2);</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">            } else if (compare(value1, value2)) {</span>
+<span class="fc" id="L37">                map.put(&quot;type&quot;, &quot;unchanged&quot;);</span>
+<span class="fc" id="L38">                map.put(&quot;value&quot;, value1);</span>
 
             } else {
-<span class="fc" id="L57">                map.put(&quot;type&quot;, &quot;changed&quot;);</span>
-<span class="fc" id="L58">                map.put(&quot;value1&quot;, value1);</span>
-<span class="fc" id="L59">                map.put(&quot;value2&quot;, value2);</span>
+<span class="fc" id="L41">                map.put(&quot;type&quot;, &quot;changed&quot;);</span>
+<span class="fc" id="L42">                map.put(&quot;value1&quot;, value1);</span>
+<span class="fc" id="L43">                map.put(&quot;value2&quot;, value2);</span>
             }
-<span class="fc" id="L61">            listMap1.add(map);</span>
-<span class="fc" id="L62">        }</span>
+<span class="fc" id="L45">            listMap1.add(map);</span>
+<span class="fc" id="L46">        }</span>
 
-<span class="fc" id="L64">        return listMap1;</span>
+<span class="fc" id="L48">        return listMap1;</span>
     }
     public static boolean compare(Object object1, Object object2) {
-<span class="pc bpc" id="L67" title="3 of 4 branches missed.">        if ((object1 == null) &amp;&amp; (object2 == null)) {</span>
-<span class="nc" id="L68">            return true;</span>
+<span class="pc bpc" id="L51" title="3 of 4 branches missed.">        if ((object1 == null) &amp;&amp; (object2 == null)) {</span>
+<span class="nc" id="L52">            return true;</span>
         }
-<span class="pc bpc" id="L70" title="2 of 4 branches missed.">        if ((object1 == null) || (object2 == null)) {</span>
-<span class="nc" id="L71">            return false;</span>
+<span class="pc bpc" id="L54" title="2 of 4 branches missed.">        if ((object1 == null) || (object2 == null)) {</span>
+<span class="nc" id="L55">            return false;</span>
         }
-<span class="fc" id="L73">        return object1.equals(object2);</span>
+<span class="fc" id="L57">        return object1.equals(object2);</span>
     }
 
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
-<span class="fc" id="L78">        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);</span>
+<span class="fc" id="L62">        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);</span>
     }
 }
 

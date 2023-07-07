@@ -8,28 +8,12 @@ import java.util.TreeSet;
 
 
 public class Differ {
-/*
-    static String filePath1 = "app/src/test/resources/jsonFile_1.json";
-    static String getFilePath2 = "app/src/test/resources/jsonFile_2.json";
 
-
-//    static String filePath1 = "app/src/test/resources/testAttachFile_1.yml";
-//    static String getFilePath2 = "app/src/test/resources/testAttachFile_2.yml";
-
-//    static String filePath1 = "app/src/test/resources/Test_1yaml.yml";
-//    static String getFilePath2 = "app/src/test/resources/Test_yaml_2.yml";
-
- */
     static List<Map<String, Object>> listMap1 = new ArrayList<>();
     static Map<String, Object> map1;
     static Map<String, Object> map2;
 
-    /* public static void main(String[] args) throws IOException {
-       generate(filePath1, getFilePath2);
-       System.out.println(FormatStylish.formatting(generate(filePath1, getFilePath2), "stylish"));
-       System.out.println(FormatPlain.formatPlain(generate(filePath1, getFilePath2), "plain"));
-         System.out.println(FormatJson.formatJson(generate(filePath1, getFilePath2),"json" ));
-     }*/
+
     public static List<Map<String, Object>> generate(String filePath1, String filePath2) throws IOException {
         map1 = Parser.parse(filePath1);
         map2 = Parser.parse(filePath2);
