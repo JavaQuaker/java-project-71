@@ -15,8 +15,7 @@ public class App  implements Callable<Integer> {
     private String filepath1;
     @CommandLine.Parameters(index = "1", description = "path to second file")
     private String filepath2;
-//    @CommandLine.Parameters(index = "0", description = "formatter")
-//    private String formatName;
+
     @CommandLine.Option(names = {"-f", "--format"}, defaultValue = "stylish",
             description = "output format [default: stylish]")
     private String formatName;
