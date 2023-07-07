@@ -56,6 +56,16 @@ public class DiffTest {
         assertThat(resultJsonTest).isEqualTo(expected1);
     }
 
+//    @Test
+//    public void testDifferJsonDefault() throws IOException {
+//        file1 = "src/test/resources/jsonFile_1.json";
+//        file2 = "src/test/resources/jsonFile_2.json";
+//
+//        resultJsonTest = Files.readString(Paths.get("src/test/resources/TestJsonJson.txt"));
+//        String expected1 = /*"{" + "\n" + */Differ.generate(file1, file2) /*+ "}"*/;
+//        assertThat(resultJsonTest).isEqualTo(expected1);
+//    }
+
     @Test
     public void testDifferYamlStylish() throws IOException {
         file7 = "src/test/resources/Test_1yaml.yml";
