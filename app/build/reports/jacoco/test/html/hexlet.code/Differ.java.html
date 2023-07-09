@@ -14,7 +14,7 @@ import java.util.TreeSet;
     static Map&lt;String, Object&gt; map2;
 
 
-    public static List&lt;Map&lt;String, Object&gt;&gt; generate(String filePath1, String filePath2) throws IOException {
+    public static List&lt;Map&lt;String, Object&gt;&gt; diffGenerate(String filePath1, String filePath2) throws IOException {
 <span class="fc" id="L18">        map1 = Parser.parse(filePath1);</span>
 <span class="fc" id="L19">        map2 = Parser.parse(filePath2);</span>
 <span class="fc" id="L20">        TreeSet&lt;String&gt; treeSet = new TreeSet&lt;&gt;(map1.keySet());</span>
@@ -59,8 +59,9 @@ import java.util.TreeSet;
 
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
-<span class="fc" id="L62">        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);</span>
+<span class="fc" id="L62">        return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), formatName);</span>
     }
+
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

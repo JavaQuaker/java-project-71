@@ -14,7 +14,7 @@ public class Differ {
     static Map<String, Object> map2;
 
 
-    public static List<Map<String, Object>> generate(String filePath1, String filePath2) throws IOException {
+    public static List<Map<String, Object>> diffGenerate(String filePath1, String filePath2) throws IOException {
         map1 = Parser.parse(filePath1);
         map2 = Parser.parse(filePath2);
         TreeSet<String> treeSet = new TreeSet<>(map1.keySet());
@@ -59,7 +59,8 @@ public class Differ {
 
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
-        return Formatter.formatting(Differ.generate(filePath1, filePath2), formatName);
+        return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), formatName);
     }
+
 }
 
