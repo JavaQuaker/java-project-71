@@ -10,7 +10,7 @@ import java.util.concurrent.Callable;
 
 @Command(name = &quot;gendiff&quot;, mixinStandardHelpOptions = true, version = &quot;gendiff 1.0&quot;,
         description = &quot;Compares two configuration files and shows a difference.&quot;)
-<span class="nc" id="L13">public class App  implements Callable&lt;Integer&gt; {</span>
+<span class="nc" id="L13">public final class App  implements Callable&lt;Integer&gt; {</span>
     @CommandLine.Parameters(index = &quot;0&quot;, description = &quot;path to first file&quot;)
     private String filepath1;
     @CommandLine.Parameters(index = &quot;1&quot;, description = &quot;path to second file&quot;)

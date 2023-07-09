@@ -1,30 +1,32 @@
 
-
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import hexlet.code.Differ;
 
 
 import java.nio.file.Paths;
-
+import lombok.Getter;
+import lombok.Setter;
 import java.io.IOException;
 import java.nio.file.Files;
-
+@Getter
+@Setter
 public class DiffTest {
-    String file1;
-    String file2;
-    String file3;
-    String file4;
-    String file5;
-    String file6;
-    String file7;
-    String file8;
-    String file9;
-    String file10;
-    String file11;
-    String file12;
-    String resultJsonTest;
-    String resultYamlTest;
+
+    private String file1;
+    private String file2;
+    private String file3;
+    private String file4;
+    private String file5;
+    private String file6;
+    private String file7;
+    private String file8;
+    private String file9;
+    private String file10;
+    private String file11;
+    private String file12;
+    private String resultJsonTest;
+    private String resultYamlTest;
 
     String formatName;
 

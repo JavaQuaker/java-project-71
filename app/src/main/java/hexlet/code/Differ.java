@@ -1,18 +1,27 @@
 package hexlet.code;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.LinkedHashMap;
 import java.util.ArrayList;
 import java.util.TreeSet;
-
+@Setter
+@Getter
 
 public class Differ {
 
-    static List<Map<String, Object>> listMap1 = new ArrayList<>();
-    static Map<String, Object> map1;
-    static Map<String, Object> map2;
+    private static List<Map<String, Object>> listMap1 = new ArrayList<>();
+    private static Map<String, Object> map1;
+    private static Map<String, Object> map2;
 
+
+
+    public static void setMap2(Map<String, Object> map2) {
+        Differ.map2 = map2;
+    }
 
     public static List<Map<String, Object>> diffGenerate(String filePath1, String filePath2) throws IOException {
         map1 = Parser.parse(filePath1);
