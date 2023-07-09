@@ -28,7 +28,7 @@ public class DiffTest {
     private String resultJsonTest;
     private String resultYamlTest;
 
-    String formatName;
+    private String formatName;
 
     @Test
     public void testDifferJsonStylish() throws IOException {
