@@ -61,6 +61,9 @@ import java.util.TreeSet;
 
 <span class="fc" id="L62">        return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), formatName);</span>
     }
+    public static String generate(String filePath1, String filePath2) throws IOException {
+<span class="nc" id="L65">        return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), &quot;stylish&quot;);</span>
+    }
 
 }
 

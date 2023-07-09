@@ -61,6 +61,9 @@ public class Differ {
 
         return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), formatName);
     }
+    public static String generate(String filePath1, String filePath2) throws IOException {
+        return Formatter.formatting(Differ.diffGenerate(filePath1, filePath2), "stylish");
+    }
 
 }
 
