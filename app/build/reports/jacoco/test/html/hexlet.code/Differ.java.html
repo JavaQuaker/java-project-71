@@ -2,20 +2,21 @@
 import java.io.IOException;
 
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 
-<span class="nc" id="L8">public class Differ {</span>
-    public static Map&lt;String, Object&gt; fileOne;
-    public static Map&lt;String, Object&gt; fileTwo;
+<span class="nc" id="L9">public class Differ {</span>
+<span class="fc" id="L10">    public static Map&lt;String, Object&gt; fileOne = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L11">    public static Map&lt;String, Object&gt; fileTwo = new LinkedHashMap&lt;&gt;();</span>
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
-<span class="fc" id="L13">        fileOne = Parser.parse(filePath1);</span>
-<span class="fc" id="L14">        fileTwo = Parser.parse(filePath2);</span>
-<span class="fc" id="L15">        return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), formatName);</span>
+<span class="fc" id="L14">        fileOne = Parser.parse(filePath1);</span>
+<span class="fc" id="L15">        fileTwo = Parser.parse(filePath2);</span>
+<span class="fc" id="L16">        return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), formatName);</span>
     }
     public static String generate(String filePath1, String filePath2) throws IOException {
-<span class="nc" id="L18">        return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), &quot;stylish&quot;);</span>
+<span class="nc" id="L19">        return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), &quot;stylish&quot;);</span>
     }
 
 }

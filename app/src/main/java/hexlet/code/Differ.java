@@ -2,12 +2,13 @@ package hexlet.code;
 import java.io.IOException;
 
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 
 public class Differ {
-    public static Map<String, Object> fileOne;
-    public static Map<String, Object> fileTwo;
+    public static Map<String, Object> fileOne = new LinkedHashMap<>();
+    public static Map<String, Object> fileTwo = new LinkedHashMap<>();
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
         fileOne = Parser.parse(filePath1);
