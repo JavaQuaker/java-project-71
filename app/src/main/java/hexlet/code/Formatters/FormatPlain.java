@@ -1,35 +1,40 @@
-package hexlet.code;
+package hexlet.code.Formatters;
 import java.util.Map;
 import java.util.List;
 
 
 public class FormatPlain {
-    public static String formatPlain(List<Map<String, Object>> list, String formatName) {
+    public static String formatPlain(List<Map<String, Object>> treeDiff) {
         StringBuilder builder = new StringBuilder();
-        if (formatName.equals("plain")) {
-            for (Map<String, Object> result : list) {
-                String value1 = result.get("key").toString();
-                if (result.get("type").equals("deleted")) {
+
+        for (Map<String, Object> result : treeDiff) {
+            String value1 = result.get("key").toString();
+            String type = result.get("type").toString();
+            switch (type) {
+                case "deleted":
                     builder.append("Property '" + value1 + "'" + " " + "was removed");
                     builder.append("\n");
+                    break;
 
-                }
-                if (result.get("type").equals("added")) {
+                case "added":
                     builder.append("Property '" + value1 + "'" + " " + "was added with" + " " + "value"
                             + ": " + nameVariable(result.get("value")));
                     builder.append("\n");
+                    break;
 
-                }
-                if (result.get("type").equals("changed")) {
+                case "changed":
                     builder.append("Property '" + value1 + "'" + " " + "was updated. From "
                             + nameVariable(result.get("value1"))
                             + " to " + nameVariable(result.get("value2")));
                     builder.append("\n");
-                }
+                default:
+                    break;
 
             }
 
         }
+
+
         return builder.toString().trim();
     }
     public static String nameVariable(Object value) {

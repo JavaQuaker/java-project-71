@@ -5,12 +5,10 @@ import hexlet.code.Differ;
 
 
 import java.nio.file.Paths;
-import lombok.Getter;
-import lombok.Setter;
+
 import java.io.IOException;
 import java.nio.file.Files;
-@Getter
-@Setter
+
 public class DiffTest {
 
     private String file1;

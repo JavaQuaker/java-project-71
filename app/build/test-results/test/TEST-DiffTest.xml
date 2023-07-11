@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DiffTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-07-09T16:53:03" hostname="LAPTOP-I4ECEIM6" time="2.42">
+<testsuite name="DiffTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-07-11T11:50:36" hostname="LAPTOP-I4ECEIM6" time="1.802">
   <properties/>
-  <testcase name="testDifferJsonPlain()" classname="DiffTest" time="1.929"/>
-  <testcase name="testDifferYamlStylish()" classname="DiffTest" time="0.28"/>
-  <testcase name="testDifferJsonJson()" classname="DiffTest" time="0.138"/>
-  <testcase name="testDifferYamlJson()" classname="DiffTest" time="0.023"/>
-  <testcase name="testDifferJsonStylish()" classname="DiffTest" time="0.015"/>
-  <testcase name="testDifferYamlPlain()" classname="DiffTest" time="0.007"/>
+  <testcase name="testDifferJsonPlain()" classname="DiffTest" time="1.495"/>
+  <testcase name="testDifferYamlStylish()" classname="DiffTest" time="0.118"/>
+  <testcase name="testDifferJsonJson()" classname="DiffTest" time="0.056"/>
+  <testcase name="testDifferYamlJson()" classname="DiffTest" time="0.021"/>
+  <testcase name="testDifferJsonStylish()" classname="DiffTest" time="0.013"/>
+  <testcase name="testDifferYamlPlain()" classname="DiffTest" time="0.044"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

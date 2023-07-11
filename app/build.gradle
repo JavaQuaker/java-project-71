@@ -46,6 +46,8 @@ jacocoTestReport {
         xml.required = true
     }
 }
+
 run {
     standardInput = System.in
 }
+
