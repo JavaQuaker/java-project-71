@@ -7,16 +7,15 @@ import java.util.Map;
 
 
 public class Differ {
-    public static Map<String, Object> fileOne = new LinkedHashMap<>();
-    public static Map<String, Object> fileTwo = new LinkedHashMap<>();
+
     public static String generate(String filePath1, String filePath2, String formatName) throws IOException {
 
-        fileOne = Parser.parse(filePath1);
-        fileTwo = Parser.parse(filePath2);
+        Map<String, Object> fileOne = new LinkedHashMap<>(Parser.parse(filePath1));
+        Map<String, Object> fileTwo = new LinkedHashMap<>(Parser.parse(filePath2));
         return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), formatName);
     }
     public static String generate(String filePath1, String filePath2) throws IOException {
-        return Formatter.formatting(FindDiffer.diffGenerate(fileOne, fileTwo), "stylish");
+        return generate(filePath1, filePath2, "stylish");
     }
 
 }
