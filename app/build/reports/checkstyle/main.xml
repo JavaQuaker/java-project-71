@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="8.45.1">
-<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatters/FormatStylish.java">
+<checkstyle version="8.37">
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/App.java">
+</file>
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Differ.java">
+</file>
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/FindDiffer.java">
+</file>
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatter.java">
 </file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatters/FormatJson.java">
 </file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatters/FormatPlain.java">
 </file>
-<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatter.java">
-</file>
-<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/App.java">
+<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Formatters/FormatStylish.java">
 </file>
 <file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Parser.java">
-</file>
-<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/Differ.java">
-</file>
-<file name="/home/alexey/java-project-71/app/src/main/java/hexlet/code/FindDiffer.java">
 </file>
 </checkstyle>
