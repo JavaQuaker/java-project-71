@@ -1,4 +1,6 @@
 # Default ignored files
+/shelf/
+/workspace.xml
 # Ignore Gradle project-specific cache directory
 .gradle
 
