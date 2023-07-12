@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DiffTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-07-12T14:10:29" hostname="LAPTOP-I4ECEIM6" time="4.319">
+<testsuite name="DiffTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-07-12T15:25:03" hostname="LAPTOP-I4ECEIM6" time="1.395">
   <properties/>
-  <testcase name="testDifferJsonPlain()" classname="DiffTest" time="4.027"/>
-  <testcase name="testDefaultStylish()" classname="DiffTest" time="0.113"/>
-  <testcase name="testDifferYamlStylish()" classname="DiffTest" time="0.022"/>
-  <testcase name="testDifferJsonJson()" classname="DiffTest" time="0.076"/>
-  <testcase name="testDifferYamlJson()" classname="DiffTest" time="0.021"/>
-  <testcase name="testDifferJsonStylish()" classname="DiffTest" time="0.014"/>
-  <testcase name="testDifferYamlPlain()" classname="DiffTest" time="0.009"/>
+  <testcase name="testDifferJsonPlain()" classname="DiffTest" time="1.148"/>
+  <testcase name="testDefaultStylish()" classname="DiffTest" time="0.115"/>
+  <testcase name="testDifferYamlStylish()" classname="DiffTest" time="0.006"/>
+  <testcase name="testDifferJsonJson()" classname="DiffTest" time="0.07"/>
+  <testcase name="testDifferYamlJson()" classname="DiffTest" time="0.007"/>
+  <testcase name="testDifferJsonStylish()" classname="DiffTest" time="0.005"/>
+  <testcase name="testDifferYamlPlain()" classname="DiffTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
