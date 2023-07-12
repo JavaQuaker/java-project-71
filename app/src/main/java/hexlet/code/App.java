@@ -12,9 +12,9 @@ import java.util.concurrent.Callable;
         description = "Compares two configuration files and shows a difference.")
 public final class App  implements Callable<Integer> {
     @CommandLine.Parameters(index = "0", description = "path to first file")
-    private String filepath1;
+    private String filepathOne;
     @CommandLine.Parameters(index = "1", description = "path to second file")
-    private String filepath2;
+    private String filepathTwo;
 
     @CommandLine.Option(names = {"-f", "--format"}, defaultValue = "stylish",
             description = "output format [default: stylish]")
@@ -30,7 +30,7 @@ public final class App  implements Callable<Integer> {
     public Integer call() {
 
         try {
-            System.out.println(Differ.generate(filepath1, filepath2, formatName));
+            System.out.println(Differ.generate(filepathOne, filepathTwo, formatName));
 
         } catch (Exception e) {
             System.err.println(e.getMessage());

@@ -6,35 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4edefb8b-048a-4ab4-a2de-f6fc90d94c79" name="Changes" comment="error correct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/bin/app" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/bin/app.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/app-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-annotations-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-core-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-databind-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/jackson-dataformat-yaml-2.15.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/picocli-4.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/install/app/lib/snakeyaml-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/jacoco/test.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,23 +99,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "//wsl$/Ubuntu/home/alexey/java-project-71/app/src/test/resources",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Ubuntu/home/alexey/java-project-71/app/src/test/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl$\Ubuntu\home\alexey\java-project-71\app\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.app [build]">
+  <component name="RunManager" selected="Gradle.app [installDist]">
     <configuration name="DiffTest.testDifferYaml" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -254,9 +225,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [build]" />
         <item itemvalue="Gradle.app [clean]" />
-        <item itemvalue="Gradle.app [installDist]" />
         <item itemvalue="Gradle.app [checkstyleTest]" />
         <item itemvalue="Gradle.DiffTest.testDifferYaml" />
       </list>
@@ -537,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689166571979</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="error correct">
+      <created>1689167639949</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1689167639949</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

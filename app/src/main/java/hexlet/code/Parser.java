@@ -12,26 +12,26 @@ import java.util.Map;
 
 public class Parser {
     public static Map<String, Object> parse(String filePath) throws IOException {
-        Map<String, Object> map = null;
-        if (searchExtension(filePath).equals("json")) {
+        Map<String, Object> dataPreparation = null;
+        if (lookingForAnExtension(filePath).equals("json")) {
             ObjectMapper mapper = new ObjectMapper();
             File file = new File(filePath);
-            map = mapper.readValue(file, new TypeReference<Map<String, Object>>() {
+            dataPreparation = mapper.readValue(file, new TypeReference<Map<String, Object>>() {
             });
-            return map;
+            return dataPreparation;
         }
-        if (searchExtension(filePath).equals("yml")) {
+        if (lookingForAnExtension(filePath).equals("yml")) {
             ObjectMapper mapper1 = new YAMLMapper();
 
             File file = new File(filePath);
-            map = mapper1.readValue(file, new TypeReference<Map<String, Object>>() {
+            dataPreparation = mapper1.readValue(file, new TypeReference<Map<String, Object>>() {
             });
-            return map;
+            return dataPreparation;
         }
 
-        return map;
+        return dataPreparation;
     }
-    public static String searchExtension(String filePath) {
+    public static String lookingForAnExtension(String filePath) {
         String[] extension = filePath.split("\\.");
         String resultSearchExtension = extension[extension.length - 1];
         return resultSearchExtension;

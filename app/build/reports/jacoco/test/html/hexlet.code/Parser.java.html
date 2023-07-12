@@ -12,26 +12,26 @@ import java.util.Map;
 
 <span class="nc" id="L13">public class Parser {</span>
     public static Map&lt;String, Object&gt; parse(String filePath) throws IOException {
-<span class="fc" id="L15">        Map&lt;String, Object&gt; map = null;</span>
-<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (searchExtension(filePath).equals(&quot;json&quot;)) {</span>
+<span class="fc" id="L15">        Map&lt;String, Object&gt; dataPreparation = null;</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (lookingForAnExtension(filePath).equals(&quot;json&quot;)) {</span>
 <span class="fc" id="L17">            ObjectMapper mapper = new ObjectMapper();</span>
 <span class="fc" id="L18">            File file = new File(filePath);</span>
-<span class="fc" id="L19">            map = mapper.readValue(file, new TypeReference&lt;Map&lt;String, Object&gt;&gt;() {</span>
+<span class="fc" id="L19">            dataPreparation = mapper.readValue(file, new TypeReference&lt;Map&lt;String, Object&gt;&gt;() {</span>
             });
-<span class="fc" id="L21">            return map;</span>
+<span class="fc" id="L21">            return dataPreparation;</span>
         }
-<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        if (searchExtension(filePath).equals(&quot;yml&quot;)) {</span>
+<span class="pc bpc" id="L23" title="1 of 2 branches missed.">        if (lookingForAnExtension(filePath).equals(&quot;yml&quot;)) {</span>
 <span class="fc" id="L24">            ObjectMapper mapper1 = new YAMLMapper();</span>
 
 <span class="fc" id="L26">            File file = new File(filePath);</span>
-<span class="fc" id="L27">            map = mapper1.readValue(file, new TypeReference&lt;Map&lt;String, Object&gt;&gt;() {</span>
+<span class="fc" id="L27">            dataPreparation = mapper1.readValue(file, new TypeReference&lt;Map&lt;String, Object&gt;&gt;() {</span>
             });
-<span class="fc" id="L29">            return map;</span>
+<span class="fc" id="L29">            return dataPreparation;</span>
         }
 
-<span class="nc" id="L32">        return map;</span>
+<span class="nc" id="L32">        return dataPreparation;</span>
     }
-    public static String searchExtension(String filePath) {
+    public static String lookingForAnExtension(String filePath) {
 <span class="fc" id="L35">        String[] extension = filePath.split(&quot;\\.&quot;);</span>
 <span class="fc" id="L36">        String resultSearchExtension = extension[extension.length - 1];</span>
 <span class="fc" id="L37">        return resultSearchExtension;</span>

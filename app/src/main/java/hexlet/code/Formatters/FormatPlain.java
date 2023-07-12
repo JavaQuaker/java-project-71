@@ -8,24 +8,24 @@ public class FormatPlain {
         StringBuilder builder = new StringBuilder();
 
         for (Map<String, Object> result : treeDiff) {
-            String value1 = result.get("key").toString();
+            String valueOne = result.get("key").toString();
             String type = result.get("type").toString();
             switch (type) {
                 case "deleted":
-                    builder.append("Property '" + value1 + "'" + " " + "was removed");
+                    builder.append("Property '" + valueOne + "'" + " " + "was removed");
                     builder.append("\n");
                     break;
 
                 case "added":
-                    builder.append("Property '" + value1 + "'" + " " + "was added with" + " " + "value"
-                            + ": " + nameVariable(result.get("value")));
+                    builder.append("Property '" + valueOne + "'" + " " + "was added with" + " " + "value"
+                            + ": " + definitionNameVariable(result.get("value")));
                     builder.append("\n");
                     break;
 
                 case "changed":
-                    builder.append("Property '" + value1 + "'" + " " + "was updated. From "
-                            + nameVariable(result.get("value1"))
-                            + " to " + nameVariable(result.get("value2")));
+                    builder.append("Property '" + valueOne + "'" + " " + "was updated. From "
+                            + definitionNameVariable(result.get("value1"))
+                            + " to " + definitionNameVariable(result.get("value2")));
                     builder.append("\n");
                 default:
                     break;
@@ -37,7 +37,7 @@ public class FormatPlain {
 
         return builder.toString().trim();
     }
-    public static String nameVariable(Object value) {
+    public static String definitionNameVariable(Object value) {
 
         if (value instanceof String) {
             return "'" + value + "'";
