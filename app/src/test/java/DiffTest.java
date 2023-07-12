@@ -23,11 +23,11 @@ public class DiffTest {
     private String file10;
     private String file11;
     private String file12;
-//    private String file13;
-//    private String file14;
+    private String file13;
+    private String file14;
     private String resultJsonTest;
     private String resultYamlTest;
-//    private String resultDefaultTest;
+    private String resultDefaultTest;
 
     private String formatName;
 
@@ -88,14 +88,14 @@ public class DiffTest {
         String expected2 = /*"{" + "\n" + */Differ.generate(file11, file12, formatName)/* + "}"*/;
         assertThat(resultYamlTest).isEqualTo(expected2);
     }
-//    @Test
-//    public void testDefaultStylish() throws IOException {
-//        file13 = "src/test/resources/Test_1yaml.yml";
-//        file14 = "src/test/resources/Test_yaml_2.yml";
-//        resultDefaultTest = Files.readString(Paths.get("src/test/resources/Test.txt"));
-//        String expectedDefaultTest = Differ.generate(file13, file14);
-//        assertThat(resultDefaultTest).isEqualTo(expectedDefaultTest);
-//    }
+    @Test
+    public void testDefaultStylish() throws IOException {
+        file13 = "src/test/resources/Test_1yaml.yml";
+        file14 = "src/test/resources/Test_yaml_2.yml";
+        resultDefaultTest = Files.readString(Paths.get("src/test/resources/Test.txt"));
+        String expectedDefaultTest = Differ.generate(file13, file14);
+        assertThat(resultDefaultTest).isEqualTo(expectedDefaultTest);
+    }
 }
 
 
