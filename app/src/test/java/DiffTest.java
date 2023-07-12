@@ -23,8 +23,8 @@ public class DiffTest {
     private String file10;
     private String file11;
     private String file12;
-    private String file13;
-    private String file14;
+//    private String file13;
+//    private String file14;
     private String resultJsonTest;
     private String resultYamlTest;
 //    private String resultDefaultTest;
