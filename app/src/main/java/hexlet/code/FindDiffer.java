@@ -13,8 +13,9 @@ public class FindDiffer {
         String file2 = "app/src/test/resources/jsonFile_2.json";
 //            String file1 = "app/src/test/resources/Test_1yaml.yml";
 //            String file2 = "app/src/test/resources/Test_yaml_2.yml";
-        System.out.println(Differ.generate(file1, file2, "stylish"));
-//            System.out.println(Differ.content(file1));
+//        System.out.println(Differ.generate(file1, file2, "stylish"));
+//            System.out.println(Differ.content(file2));
+            System.out.println(Parser.parse(Differ.content(file1), "json"));
 
     }
     public static List<Map<String, Object>> diffGenerate(
