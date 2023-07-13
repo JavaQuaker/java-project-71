@@ -11,20 +11,21 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 public class Parser {
-    public static Map<String, Object> parse(String filePath) throws IOException {
+    public static Map<String, Object> parse(String content, String formatName) throws IOException {
         Map<String, Object> dataPreparation = null;
-        if (lookingForAnExtension(filePath).equals("json")) {
+        if (lookingForAnExtension(formatName).equals("json")) {
             ObjectMapper mapper = new ObjectMapper();
-            File file = new File(filePath);
-            dataPreparation = mapper.readValue(file, new TypeReference<Map<String, Object>>() {
+//            File file = new File(filePath);
+            System.out.println(content);
+            dataPreparation = mapper.readValue(content, new TypeReference<Map<String, Object>>() {
             });
             return dataPreparation;
         }
-        if (lookingForAnExtension(filePath).equals("yml")) {
+        if (lookingForAnExtension(formatName).equals("yml")) {
             ObjectMapper mapper1 = new YAMLMapper();
 
-            File file = new File(filePath);
-            dataPreparation = mapper1.readValue(file, new TypeReference<Map<String, Object>>() {
+//            File file = new File(filePath);
+            dataPreparation = mapper1.readValue(content, new TypeReference<Map<String, Object>>() {
             });
             return dataPreparation;
         }

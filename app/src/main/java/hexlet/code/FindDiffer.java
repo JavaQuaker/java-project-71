@@ -3,13 +3,22 @@ package hexlet.code;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeSet;
 import java.util.ArrayList;
+import java.util.TreeSet;
 import java.util.LinkedHashMap;
 
 public class FindDiffer {
+        public static void main(String[] args) throws IOException {
+        String file1 = "app/src/test/resources/jsonFile_1.json";
+        String file2 = "app/src/test/resources/jsonFile_2.json";
+//            String file1 = "app/src/test/resources/Test_1yaml.yml";
+//            String file2 = "app/src/test/resources/Test_yaml_2.yml";
+        System.out.println(Differ.generate(file1, file2, "stylish"));
+//            System.out.println(Differ.content(file1));
+
+    }
     public static List<Map<String, Object>> diffGenerate(
-        Map<String, Object> filePathOne, Map<String, Object> filePathTwo) throws IOException {
+            Map<String, Object> filePathOne, Map<String, Object> filePathTwo) throws IOException {
         List<Map<String, Object>> treeOfDifference = new ArrayList<>();
 
         TreeSet<String> treeSet = new TreeSet<>(filePathOne.keySet());
@@ -42,6 +51,7 @@ public class FindDiffer {
 
         return treeOfDifference;
     }
+
     public static boolean compare(Object object1, Object object2) {
         if ((object1 == null) && (object2 == null)) {
             return true;
@@ -52,3 +62,4 @@ public class FindDiffer {
         return object1.equals(object2);
     }
 }
+
