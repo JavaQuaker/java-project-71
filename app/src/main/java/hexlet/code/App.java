@@ -1,11 +1,7 @@
 package hexlet.code;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
-
-
 import java.util.concurrent.Callable;
-
-
 
 
 @Command(name = "gendiff", mixinStandardHelpOptions = true, version = "gendiff 1.0",

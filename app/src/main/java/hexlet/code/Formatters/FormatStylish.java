@@ -28,7 +28,6 @@ public class FormatStylish {
                     builder.append("\n");
                 default:
                     break;
-
             }
         }
 

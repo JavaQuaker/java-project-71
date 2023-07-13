@@ -2,10 +2,7 @@
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import hexlet.code.Differ;
-
-
 import java.nio.file.Paths;
-
 import java.io.IOException;
 import java.nio.file.Files;
 

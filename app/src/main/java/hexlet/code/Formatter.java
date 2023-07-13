@@ -1,10 +1,8 @@
 package hexlet.code;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import hexlet.code.Formatters.FormatJson;
 import hexlet.code.Formatters.FormatPlain;
 import hexlet.code.Formatters.FormatStylish;
-
 import java.util.List;
 import java.util.Map;
 

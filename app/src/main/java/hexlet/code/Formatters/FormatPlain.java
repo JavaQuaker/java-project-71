@@ -29,14 +29,11 @@ public class FormatPlain {
                     builder.append("\n");
                 default:
                     break;
-
             }
-
         }
-
-
         return builder.toString().trim();
     }
+
     public static String definitionNameVariable(Object value) {
 
         if (value instanceof String) {
