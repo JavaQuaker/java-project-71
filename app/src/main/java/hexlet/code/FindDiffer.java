@@ -8,14 +8,16 @@ import java.util.TreeSet;
 import java.util.LinkedHashMap;
 
 public class FindDiffer {
+    static String file1 = "app/src/test/resources/jsonFile_1.json";
+    static String file2 = "app/src/test/resources/jsonFile_2.json";
         public static void main(String[] args) throws IOException {
-        String file1 = "app/src/test/resources/jsonFile_1.json";
-        String file2 = "app/src/test/resources/jsonFile_2.json";
+
 //            String file1 = "app/src/test/resources/Test_1yaml.yml";
 //            String file2 = "app/src/test/resources/Test_yaml_2.yml";
-//        System.out.println(Differ.generate(file1, file2, "stylish"));
-//            System.out.println(Differ.content(file2));
-            System.out.println(Parser.parse(Differ.content(file1), "json"));
+        System.out.println(Differ.generate(file1, file2, "stylish"));
+//            System.out.println(Differ.readFile(file2));
+//            System.out.println(Parser.parse(Differ.readFile(file1), "json"));
+
 
     }
     public static List<Map<String, Object>> diffGenerate(

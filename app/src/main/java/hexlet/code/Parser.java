@@ -14,7 +14,7 @@ import java.util.Map;
 public class Parser {
     public static Map<String, Object> parse(String content, String formatName) throws IOException {
         Map<String, Object> dataPreparation = new LinkedHashMap<>();
-        if (lookingForAnExtension(formatName).equals("json")) {
+        if (formatName.equals("json")) {
             ObjectMapper mapper = new ObjectMapper();
 
             new ObjectMapper().readValue(content, Map.class);
@@ -23,7 +23,7 @@ public class Parser {
 
             return dataPreparation;
         }
-        if (lookingForAnExtension(formatName).equals("yml")) {
+        if (formatName.equals("yml")) {
             ObjectMapper mapper1 = new YAMLMapper();
 
             new ObjectMapper().readValue(content, Map.class);
@@ -34,11 +34,7 @@ public class Parser {
 
         return dataPreparation;
     }
-    public static String lookingForAnExtension(String filePath) {
-        String[] extension = filePath.split("\\.");
-        String resultSearchExtension = extension[extension.length - 1];
-        return resultSearchExtension;
-    }
+
     public static Path defendingPath(String filePath) {
         return Paths.get(filePath).toAbsolutePath().normalize();
     }
