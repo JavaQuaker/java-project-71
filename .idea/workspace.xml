@@ -4,52 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4edefb8b-048a-4ab4-a2de-f6fc90d94c79" name="Changes" comment="error correct">
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Differ.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Differ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/hexlet/code/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/DiffTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/DiffTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/distributions/app-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/jacoco/test.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/libs/app-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/App.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Differ.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$1.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser$2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/Parser.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/hexlet.code/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/jacoco/test/jacocoTestReport.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/DiffTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-DiffTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Differ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/FindDiffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/FindDiffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatPlain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatPlain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatStylish.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Formatters/FormatStylish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hexlet/code/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/DiffTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/DiffTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="4edefb8b-048a-4ab4-a2de-f6fc90d94c79" name="Changes" comment="error correct" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,6 +88,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Alexey &lt;leha_s78@mail.ru&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main2" />
@@ -145,7 +105,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2RQwvbNOl0qWk6QtB2N7g6WJpcd" />
   <component name="ProjectViewState">
@@ -623,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689257621557</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="error correct">
+      <created>1689369992869</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1689369992869</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
