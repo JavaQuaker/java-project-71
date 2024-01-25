@@ -11,3 +11,21 @@
 [демо](https://asciinema.org/a/ilIcqG6TOiVQSkdHA3CrD8HXz)
 
 [демо](https://asciinema.org/a/KISkJWRlHBozfbrFEVIccSJ1q)
+
+<h3>Стек</h3>
+<p>Java, Gradle, Make, Checkstyle, JUnit, Jacoco, GitHub Actions, Code Climate.</p>
+
+<h3>Setup</h3>
+
+```
+make setup
+```
+<h3>Build</h3>
+
+```
+make build
+```
+<h3>Run</h3>
+
+```make run-dist
+```
