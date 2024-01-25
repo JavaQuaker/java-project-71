@@ -27,5 +27,6 @@ make build
 ```
 <h3>Run</h3>
 
-```make run-dist
+```
+make run-dist
 ```
